@@ -21,7 +21,7 @@ def index(request):
     amount = 1
     account_reference = 'reference'
     transaction_desc = 'Description'
-    callback_url = 'http://localhost:3000/'
+    callback_url = 'https://devfreezy.netlify.app'
     response = cl.stk_push(phone_number, amount, account_reference, transaction_desc, callback_url)
     return HttpResponse(response)
 
